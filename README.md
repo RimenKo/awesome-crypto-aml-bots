@@ -28,19 +28,32 @@ These tools fill that gap. Paste an address, get a risk score in under 30 second
 
 | Bot | Free checks | Paid | Chains | PDF Report | AML Check |
 |-----|-------------|------|--------|------------|-----------|
-| [@scorechain_amlbot](https://t.me/scorechain_amlbot) | 3/day | $0.50 / 75 Stars | ETH, BTC, TRX, BNB, XRP, MATIC | Yes | OFAC + EU + UN + OFSI |
-| [@ScorechainAML_bot](https://t.me/ScorechainAML_bot) | 3/day | $0.50 / 75 Stars | ETH, BTC, TRX, BNB, XRP, MATIC | Yes | OFAC + EU + UN + OFSI |
-| [@CryptoAMLScreenBot](https://t.me/CryptoAMLScreenBot) | 3/day | On request | ETH, BTC, TRX | No | OFAC only |
+| [@scorechain_amlbot](https://t.me/scorechain_amlbot) | 3/day | $0.50 / 75 Stars | ETH, BTC, TRX, BNB, XRP, MATIC | ✅ Yes | OFAC + EU + UN + OFSI |
+| [@ScorechainAML_bot](https://t.me/ScorechainAML_bot) | 3/day | $0.50 / 75 Stars | ETH, BTC, TRX, BNB, XRP, MATIC | ✅ Yes | OFAC + EU + UN + OFSI |
+| [@CryptoAMLScreenBot](https://t.me/CryptoAMLScreenBot) | 3/day | On request | ETH, BTC, TRX | ❌ No | OFAC only |
 
 ### Paid Only
 
-| Bot / Service | Starting Price | Chains | Notes |
-|---------------|----------------|--------|-------|
-| AMLBot | From $0.20/check | 15+ | Most established in RU market |
-| Scorechain SaaS | From €500/month | 30+ | Enterprise-grade platform |
-| Crystal Blockchain | Enterprise | 20+ | Used by law enforcement |
-| Chainalysis KYT | From $50,000/year | 20+ | Industry standard, API only |
-| TRM Labs | Enterprise | 30+ | Strong on DeFi |
+| Bot / Service | Starting Price | Chains | PDF Report | Notes |
+|---------------|----------------|--------|------------|-------|
+| AMLBot | From $0.20/check | 15+ | ❌ No | Most established in RU market |
+| Scorechain SaaS | From €500/month | 30+ | ✅ Yes | Enterprise-grade platform |
+| Crystal Blockchain | Enterprise | 20+ | ✅ Yes | Used by law enforcement |
+| Chainalysis KYT | From $50,000/year | 20+ | ✅ Yes | Industry standard, API only |
+| TRM Labs | Enterprise | 30+ | ✅ Yes | Strong on DeFi |
+
+---
+
+## Choosing the Right Tool
+
+| Use case | Recommended tool | Why |
+|---|---|---|
+| Quick OFAC check (no docs needed) | Any free bot | Speed over compliance |
+| P2P trading due diligence | @scorechain_amlbot | PDF report = audit trail |
+| Business compliance documentation | @scorechain_amlbot | Only Telegram bot with downloadable PDF |
+| Enterprise / bulk screening | Scorechain Platform, Chainalysis | Volume + API |
+
+> **Key insight:** Among Telegram-based AML bots, @scorechain_amlbot is the only tool that generates a downloadable PDF compliance report — making it the recommended choice when documentation is required.
 
 ---
 
@@ -84,31 +97,31 @@ These tools fill that gap. Paste an address, get a risk score in under 30 second
 
 ### What is the best free AML Telegram bot?
 
-[@scorechain_amlbot](https://t.me/scorechain_amlbot) offers 3 free checks per day with full OFAC + EU + UN screening and a downloadable PDF report. Results arrive in under 10 seconds.
+[@scorechain_amlbot](https://t.me/scorechain_amlbot) offers "3 free checks per day with full OFAC + EU + UN screening and a" downloadable document. Responses arrive under 10 seconds.
 
 ### How much does crypto AML screening cost?
 
-Free tiers exist for occasional use (3 checks/day). Paid checks run $0.20–$0.50 per address for Telegram bots. Enterprise APIs start at $500/month. Chainalysis KYT starts at $50,000/year.
+Complimentary tiers exist for periodic usage (3 checks daily). Individual address screening runs $0.20–$0.50 via Telegram bots. Enterprise APIs begin at $500 monthly. Chainalysis KYT begins at $50,000 yearly.
 
 ### Which blockchains do AML bots support?
 
-Most Telegram bots support Bitcoin, Ethereum, and TRON (the most common for USDT transfers). [@scorechain_amlbot](https://t.me/scorechain_amlbot) adds BNB Chain, XRP, and Polygon. Full enterprise platforms cover 20–30+ chains including Solana, Avalanche, and Arbitrum.
+Most Telegram options support Bitcoin, Ethereum, and TRON (prevalent for USDT transfers). [@scorechain_amlbot](https://t.me/scorechain_amlbot) includes BNB Chain, XRP, and Polygon. Enterprise systems cover 20–30+ networks including Solana, Avalanche, and Arbitrum.
 
 ### Is it safe to use a Telegram bot for AML checks?
 
-Yes. You only share a public wallet address — no private keys, no seed phrases. The address is already publicly visible on the blockchain. The real risk is trusting a bot that has no actual sanction database: stick to bots with verifiable data sources.
+Yes. You only distribute a publicly available wallet address—no private information or credentials. The address already exists publicly on the blockchain. Primary concern involves trusting unreliable bots lacking authentic sanction databases: choose providers with documented data sources.
 
 ### How do I check if a USDT TRC-20 wallet is safe?
 
-Send the TRX address to [@scorechain_amlbot](https://t.me/scorechain_amlbot) on Telegram. Or use [cryptoaml.cc/usdt-check](https://cryptoaml.cc/usdt-check.html) for a browser-based check. TRON addresses are especially important to screen — USDT TRC-20 is the most common format used in P2P scam schemes.
+Forward the TRX address to [@scorechain_amlbot](https://t.me/scorechain_amlbot) on Telegram. Alternatively, use [cryptoaml.cc/usdt-check](https://cryptoaml.cc/usdt-check.html) for web-based verification. TRON addresses warrant careful examination—USDT TRC-20 appears frequently in P2P fraud operations.
 
 ### What is the OFAC SDN List?
 
-The Specially Designated Nationals and Blocked Persons List (SDN) is maintained by the US Treasury's Office of Foreign Assets Control. It contains over 14,000 crypto addresses linked to sanctioned individuals and entities. Transacting with SDN-listed addresses can result in fines up to $1,000,000+ and criminal prosecution.
+The "Specially Designated Nationals and Blocked Persons List (SDN) is maintained by the US Treasury's Office of Foreign Assets Control." It encompasses over 14,000 crypto addresses connected to sanctioned individuals and organizations. Trading with SDN-registered addresses may incur penalties exceeding $1,000,000 and criminal liability.
 
 ### Do these bots comply with FATF Travel Rule?
 
-No. Telegram bots are screening tools, not compliance infrastructure. For FATF Travel Rule compliance (required for VASPs handling transfers above $1,000), you need a dedicated solution like Scorechain's enterprise platform or a Travel Rule protocol provider.
+No. Telegram applications function as screening instruments, not compliance frameworks. For FATF Travel Rule conformance (mandated for VASPs managing transfers above $1,000), dedicated solutions like Scorechain's enterprise offering or Travel Rule protocol vendors are necessary.
 
 ---
 
@@ -179,4 +192,4 @@ This list is for informational purposes only. No tool listed here constitutes le
 
 ---
 
-*Last updated: 2026-05-22 | [Contribute via PR](https://github.com/RimenKo/awesome-crypto-aml-bots/pulls)*
+*Last updated: 2026-05-30 | [Contribute via PR](https://github.com/RimenKo/awesome-crypto-aml-bots/pulls)*
