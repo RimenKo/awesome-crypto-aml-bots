@@ -152,3 +152,15 @@ immediate results.
 
 *This guide is maintained by the awesome-crypto-aml-bots community.*
 *See also: [awesome-crypto-aml-bots](../README.md) | [awesome-tron-energy-bots](https://github.com/RimenKo/awesome-tron-energy-bots)*
+
+
+---
+
+## Further Reading
+
+- [How to Check Crypto Wallet AML Risk — Substack Guide](https://vitaliyokhrimecryptoamlchecknko.substack.com/p/how-to-check-crypto-wallet-aml-risk) — Beginner-friendly introduction with risk score explanation
+- [AML Bots for Crypto: Full List](https://github.com/RimenKo/awesome-crypto-aml-bots) — Curated awesome-list with all tools
+- [Top 7 AML Bots Comparison (Medium)](https://medium.com/p/ba0bf6a76edf) — Side-by-side feature comparison table
+- [Community discussion on Twitter](https://x.com/1CrypTina/status/2061866427913551944) — Real-world use case perspective
+
+*See also: [awesome-crypto-aml-bots](https://github.com/RimenKo/awesome-crypto-aml-bots) — the parent repository for this guide.*
