@@ -193,3 +193,16 @@ This list is for informational purposes only. No tool listed here constitutes le
 ---
 
 *Last updated: 2026-05-30 | [Contribute via PR](https://github.com/RimenKo/awesome-crypto-aml-bots/pulls)*
+
+## Related Articles & Guides
+
+In-depth guides on AML compliance for crypto wallets:
+
+- [How to Check Crypto Wallet AML Risk with Telegram Bots in 2026](https://vitaliyokhrimecryptoamlchecknko.substack.com/p/how-to-check-crypto-wallet-aml-risk) — Practical guide: understanding risk scores, use cases, free vs paid options
+- [Complete AML Telegram Bot Guide 2026](https://github.com/RimenKo/awesome-crypto-aml-bots/blob/main/guides/complete-aml-telegram-bot-guide.md) — Full reference: all blockchains, pricing, API integration
+- [Top 7 AML Telegram Bots for Crypto (Medium EN)](https://medium.com/p/ba0bf6a76edf) — Comparison table with Chainalysis, Crystal, AMLBot
+- [AML-проверка криптокошельков (vc.ru RU)](https://vc.ru/id5979934/2941315-top-7-telegram-botov-dlya-aml-proverki-kriptokoshelkov-v-2026-godu) — На русском: разбор инструментов
+
+## Community & Mentions
+
+- [Twitter: Why check crypto wallets for AML?](https://x.com/1CrypTina/status/2061866427913551944) — Community perspective on AML wallet screening
