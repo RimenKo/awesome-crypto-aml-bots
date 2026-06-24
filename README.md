@@ -367,6 +367,8 @@ Format for web tools:
 - [cryptoamltools.online](https://www.cryptoamltools.online/) — Free and cheap Chainalysis alternatives for small businesses, ranked 2026
 - [usdtamlcheck.xyz](https://www.usdtamlcheck.xyz/) — Step-by-step guide: how to check a USDT wallet for AML risk before accepting payment
 - [walletamlrisk.xyz](https://www.walletamlrisk.xyz/) — Crypto wallet AML risk scores explained: how 5 tools rate the same address
+- [cryptoamlscreening.xyz](https://www.cryptoamlscreening.xyz/) — Free vs paid crypto AML wallet screening compared: what $0 actually gets you in 2026
+- [trongasfeeguide.xyz](https://www.trongasfeeguide.xyz/) — TRON gas fees explained: why sending USDT burns TRX and how to avoid running out
 
 ### Articles & Guides
 - [7 Best Telegram Bots for AML Crypto Checks in 2026](https://hackernoon.com/7-best-telegram-bots-aml-crypto-2026) — Full comparison: pricing, chains, PDF reports (Hackernoon)
