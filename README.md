@@ -361,9 +361,13 @@ Format for web tools:
 ## Related Resources
 
 ### Web Tools
+- [cryptoaml.ai](https://cryptoaml.ai) — Free Telegram bot + API for AML screening, OFAC, FATF, MiCA compliance
 - [cryptoaml.cc](https://cryptoaml.cc) — Free crypto wallet safety check, no signup required
-- [cryptoaml.ai](https://cryptoaml.ai) — Enterprise AML screening with API, OFAC, FATF, MiCA compliance
 - [cryptoaml.cc/usdt-check](https://cryptoaml.cc/usdt-check.html) — USDT TRC-20 specific checker
+- [aml-crypto-checker.com](https://aml-crypto-checker.com/) — Ranked comparison of best Telegram AML bots and tools in 2026
+- [cryptoamltools.online](https://www.cryptoamltools.online/) — Free and cheap Chainalysis alternatives for small businesses, ranked 2026
+- [usdtamlcheck.xyz](https://www.usdtamlcheck.xyz/) — Step-by-step guide: how to check a USDT wallet for AML risk before accepting payment
+- [walletamlrisk.xyz](https://www.walletamlrisk.xyz/) — Crypto wallet AML risk scores explained: how 5 tools rate the same address
 
 ### Articles & Guides
 - [7 Best Telegram Bots for AML Crypto Checks in 2026](https://hackernoon.com/7-best-telegram-bots-aml-crypto-2026) — Full comparison: pricing, chains, PDF reports (Hackernoon)
@@ -390,4 +394,4 @@ This list is for informational purposes only. No tool listed here constitutes le
 
 ---
 
-*Last updated: 2026-06-22 | [Contribute via PR](https://github.com/RimenKo/awesome-crypto-aml-bots/pulls)*
+*Last updated: 2026-06-24 | [Contribute via PR](https://github.com/RimenKo/awesome-crypto-aml-bots/pulls)*
