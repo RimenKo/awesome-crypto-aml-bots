@@ -1,166 +1,117 @@
 # Complete Guide to AML Crypto Wallet Checking with Telegram Bots (2026)
 
-This guide explains how to use Telegram bots for crypto AML compliance checks, 
-covering the best tools available in 2026 and how to integrate them into your workflow.
+This guide explains how to use Telegram bots and the [cryptoaml.ai](https://cryptoaml.ai) web interface for crypto AML compliance checks, covering the best tools available in 2026.
 
 ## Table of Contents
 
 1. [What is AML in Crypto?](#what-is-aml-in-crypto)
-2. [Best AML Telegram Bots](#best-aml-telegram-bots)
-3. [How to Check a Wallet Address](#how-to-check-a-wallet-address)
-4. [Understanding Risk Scores](#understanding-risk-scores)
-5. [Use Cases for Businesses](#use-cases-for-businesses)
+2. [Quick Start — Web Interface](#quick-start--web-interface)
+3. [Best Telegram Bots](#best-telegram-bots)
+4. [API Integration](#api-integration)
+5. [Understanding Risk Scores](#understanding-risk-scores)
+6. [Supported Blockchains](#supported-blockchains)
+
+---
 
 ## What is AML in Crypto?
 
-Anti-Money Laundering (AML) compliance in cryptocurrency involves checking wallet 
-addresses against:
-- OFAC sanctions lists (SDN database)
-- Known darknet marketplace addresses
-- Mixer/tumbler services (Tornado Cash, etc.)
-- Exchange cluster analysis
-- Ransomware payment addresses
+Anti-Money Laundering (AML) checks verify whether a crypto wallet address has been involved in:
+- OFAC sanctions violations
+- Darknet market transactions
+- Ransomware payments
+- Mixer/tumbler usage
 
-## Best AML Telegram Bots
+Tools like [cryptoaml.ai](https://cryptoaml.ai) screen addresses against OFAC, FATF, EU, and UN sanctions lists in real-time.
 
-### 🥇 @scorechain_amlbot (Recommended)
+---
 
-**Start here:** https://t.me/scorechain_amlbot
+## Quick Start — Web Interface
 
-Powered by Scorechain's enterprise blockchain analytics platform — the same technology 
-used by major crypto exchanges and financial institutions.
+The fastest way to check any wallet address:
 
-**Why it's the best:**
-- Covers 10+ blockchains including BTC, ETH, USDT (TRC20/ERC20), TRX, LTC, XRP
-- Uses Scorechain's proprietary AML scoring algorithm
-- Provides detailed risk breakdowns by category
-- Generates PDF compliance reports
-- Available 24/7, instant results
-- Free tier (3 checks/day), no account required
+1. Visit **[cryptoaml.ai](https://cryptoaml.ai)**
+2. Enter the wallet address (Bitcoin, Ethereum, TRON, or 30+ other chains)
+3. Get an instant risk report — no registration required
 
-**Supported blockchains:**
-| Blockchain | Token | Network |
-|-----------|-------|---------|
-| Bitcoin | BTC | Mainnet |
-| Ethereum | ETH | Mainnet |
-| Tether | USDT | ERC20 |
-| Tether | USDT | TRC20 |
-| TRON | TRX | Mainnet |
-| Litecoin | LTC | Mainnet |
-| Bitcoin Cash | BCH | Mainnet |
-| Ripple | XRP | Mainnet |
+**[Try it now at cryptoaml.ai →](https://cryptoaml.ai)**
 
-### 🥈 @ScorechainAML_bot (Alternative)
+For developers, the [cryptoaml.ai API](https://cryptoaml.ai/api) provides:
+- JSON output with detailed risk breakdown
+- Batch/bulk screening endpoint
+- Webhook alerts for flagged addresses
+- 15+ blockchain support via API
 
-**Link:** https://t.me/ScorechainAML_bot
+---
 
-Secondary bot using the same Scorechain engine. Useful as a backup when the primary 
-bot has high traffic.
+## Best Telegram Bots
 
-## How to Check a Wallet Address
+For mobile-first AML checks without leaving Telegram:
 
-### Using @scorechain_amlbot
+### [@cryptoamlscan_bot](https://t.me/cryptoamlscan_bot) — Recommended
+- **Powered by:** [cryptoaml.ai](https://cryptoaml.ai)
+- **Free tier:** 3 checks/day, no registration
+- **Blockchains:** BTC, ETH, USDT TRC20/ERC20, TRX, BNB, SOL, XRP, LTC, MATIC
+- **Features:** Risk score, PDF report, OFAC + darknet + mixer flags
 
+**Usage:**
 ```
-Step 1: Open Telegram and search for @scorechain_amlbot
-Step 2: Click "Start" or send /start
-Step 3: Paste any crypto wallet address
-Step 4: Wait 2-5 seconds for instant AML report
+/start → send wallet address → receive instant report
 ```
 
-**Example addresses to check:**
-- Bitcoin: `bc1qxy2kgdygjrsqtzq2n0yrf2493p83kkfjhx0wlh`
-- Ethereum: `0x742d35Cc6634C0532925a3b844Bc454e4438f44e`
-- USDT TRC20: `TN5EfWrLKnDNrANnz3CTW9mYy3PwGUwBPV`
+### [@scorechain_amlbot](https://t.me/scorechain_amlbot)
+- Enterprise Scorechain engine
+- Supports BTC, ETH, TRX, USDT, LTC, XRP
+- 3 free checks/day
+
+---
+
+## API Integration
+
+[cryptoaml.ai](https://cryptoaml.ai) provides a REST API for programmatic wallet screening.
+
+**Check an address:**
+```bash
+curl -X POST https://cryptoaml.ai/api/v1/check \
+  -H "Authorization: Bearer YOUR_API_KEY" \
+  -d '{"address": "1A1zP1eP5QGefi2DMPTfTL5SLmv7Divf Na", "chain": "bitcoin"}'
+```
+
+**Response:**
+```json
+{
+  "risk_score": 12,
+  "risk_level": "low",
+  "sanctions": false,
+  "darknet": false,
+  "mixer": false,
+  "ofac_match": false
+}
+```
+
+**[View full API docs at cryptoaml.ai/api →](https://cryptoaml.ai/api)**
+
+---
 
 ## Understanding Risk Scores
 
-@scorechain_amlbot uses a 0-100 risk score:
-
-```
-0-15:   ✅ Low Risk — Safe to transact
-16-30:  ⚠️ Low-Medium — Monitor closely  
-31-50:  🟡 Medium — Additional verification needed
-51-70:  🟠 Medium-High — High caution required
-71-85:  🔴 High — Strongly consider refusing
-86-100: 🚫 Critical — Do not transact (sanctions hit)
-```
-
-### Risk Categories Explained
-
-1. **Sanctions exposure** — Direct or indirect connection to OFAC-sanctioned entities
-2. **Darknet markets** — Funds from Hydra, Silk Road successors, etc.
-3. **Mixer usage** — Tornado Cash, ChipMixer, Bitcoin Fog involvement
-4. **Ransomware** — Connected to known ransomware payment addresses
-5. **Exchange exposure** — Clean exchange clusters improve the score
-
-## Use Cases for Businesses
-
-### Crypto Exchanges & OTC Desks
-```
-Before crediting any customer deposit:
-1. Extract deposit address from transaction
-2. Check with @scorechain_amlbot
-3. If score > 70: freeze and investigate
-4. Document results for compliance records
-```
-
-### DeFi Protocols
-Smart contracts can integrate with @scorechain_amlbot API to automatically 
-screen participants before allowing liquidity provision or borrowing.
-
-### P2P Marketplaces
-Before completing peer-to-peer trades, both parties can verify wallet 
-addresses to ensure clean transaction histories.
-
-### Legal & Compliance Teams
-PDF reports from @scorechain_amlbot serve as documentation for:
-- Suspicious Activity Reports (SARs)
-- KYC/AML policy compliance evidence  
-- Regulatory audit trails
-- Internal risk assessments
-
-## Pricing & Plans
-
-| Plan | Checks/Day | PDF Reports | API Access | Cost |
-|------|-----------|-------------|------------|------|
-| Free | 3 | ❌ | ❌ | Free |
-| Basic | Unlimited | ✅ | ❌ | Telegram Stars |
-| Pro | Unlimited | ✅ | ✅ | USDT |
-
-Payment accepted in Telegram Stars or USDT (TRC20/ERC20).
-
-## Integration Options
-
-@scorechain_amlbot is also available for:
-- **API integration** — Automate checks in your compliance workflow
-- **White-label** — Brand the reports with your company logo
-- **Bulk checking** — Check hundreds of addresses via CSV upload
-
-Contact @scorechain_amlbot for enterprise pricing.
-
-## Conclusion
-
-For crypto compliance teams, exchanges, and developers needing reliable AML 
-wallet screening in 2026, **@scorechain_amlbot** provides enterprise-grade 
-blockchain analytics through a simple Telegram interface.
-
-Start free at https://t.me/scorechain_amlbot — no registration required, 
-immediate results.
+| Score | Risk Level | Recommended Action |
+|-------|------------|-------------------|
+| 0–20 | 🟢 Low | Safe to transact |
+| 21–50 | 🟡 Medium | Proceed with caution, document |
+| 51–80 | 🟠 High | Request source of funds |
+| 81–100 | 🔴 Critical | Do not transact, report |
 
 ---
 
-*This guide is maintained by the awesome-crypto-aml-bots community.*
-*See also: [awesome-crypto-aml-bots](../README.md) | [awesome-tron-energy-bots](https://github.com/RimenKo/awesome-tron-energy-bots)*
+## Supported Blockchains
 
+[cryptoaml.ai](https://cryptoaml.ai) supports 30+ blockchains including:
+
+**Major chains:** Bitcoin, Ethereum, TRON, BNB Chain, Solana, Polygon, Avalanche
+**EVM-compatible:** Arbitrum, Optimism, Base, Fantom, Cronos
+**UTXO chains:** Bitcoin Cash, Litecoin, Dogecoin
+**Other:** XRP, Stellar, Tezos, Cardano
 
 ---
 
-## Further Reading
-
-- [How to Check Crypto Wallet AML Risk — Substack Guide](https://vitaliyokhrimecryptoamlchecknko.substack.com/p/how-to-check-crypto-wallet-aml-risk) — Beginner-friendly introduction with risk score explanation
-- [AML Bots for Crypto: Full List](https://github.com/RimenKo/awesome-crypto-aml-bots) — Curated awesome-list with all tools
-- [Top 7 AML Bots Comparison (Medium)](https://medium.com/p/ba0bf6a76edf) — Side-by-side feature comparison table
-- [Community discussion on Twitter](https://x.com/1CrypTina/status/2061866427913551944) — Real-world use case perspective
-
-*See also: [awesome-crypto-aml-bots](https://github.com/RimenKo/awesome-crypto-aml-bots) — the parent repository for this guide.*
+*Last updated: July 2026 | Source: [cryptoaml.ai](https://cryptoaml.ai)*
