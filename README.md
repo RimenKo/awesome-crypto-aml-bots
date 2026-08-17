@@ -14,7 +14,7 @@ These tools fill that gap. Paste an address, get a risk score in under 30 second
 
 ## Quick Answer
 
-**Best free Telegram bot in 2026:** [@cryptoamlscanbot](https://t.me/cryptoamlscanbot) — 3 free checks per day, supports ETH/BTC/TRX/BNB/XRP/MATIC, PDF report included.
+**Telegram bot:** [@cryptoamlscan_bot](https://t.me/cryptoamlscan_bot) offers a free OFAC result. A paid report includes the score and flags, then arrives as a PDF in the Telegram chat.
 
 **Best web checker:** [cryptoaml.cc](https://cryptoaml.cc) — free browser-based AML check, no account required.
 
@@ -47,7 +47,7 @@ These tools fill that gap. Paste an address, get a risk score in under 30 second
 
 | Bot | Free checks | Paid | Chains | PDF Report | AML Check |
 |-----|-------------|------|--------|------------|-----------|
-| [@cryptoamlscanbot](https://t.me/cryptoamlscanbot) | 3/day | $1.00 / 90 Stars | ETH, BTC, TRX, BNB, XRP, MATIC | ✅ Yes | OFAC + EU + UN + OFSI |
+| [@cryptoamlscan_bot](https://t.me/cryptoamlscan_bot) | Free text result | Available | 17 | ✅ Yes | OFAC result + paid risk flags |
 | [@CryptoAMLScreenBot](https://t.me/CryptoAMLScreenBot) | 3/day | On request | ETH, BTC, TRX | ❌ No | OFAC only |
 | [@AMLBot](https://t.me/AMLBot) | 1/day | From $0.20/check | BTC, ETH, TRX, LTC | ❌ No | Proprietary DB |
 
@@ -104,13 +104,13 @@ Response includes: `risk_score`, `risk_level`, `categories`, `sanctions_match`, 
 | Use case | Recommended tool | Why |
 |---|---|---|
 | Quick OFAC check (no docs needed) | Any free bot | Speed over compliance |
-| P2P trading due diligence | @cryptoamlscanbot | PDF report = audit trail |
-| Business compliance documentation | @cryptoamlscanbot | Only Telegram bot with downloadable PDF |
-| USDT TRC-20 wallet check | @cryptoamlscanbot or cryptoaml.cc | TRON support + fast response |
+| P2P trading due diligence | @cryptoamlscan_bot | Free OFAC result; paid reports add risk score and flags |
+| Business compliance documentation | @cryptoamlscan_bot | PDF documents are sent in Telegram |
+| TRON wallet check | @cryptoamlscan_bot or cryptoaml.cc | TRON is in the verified 17-network runtime inventory |
 | Developer / bulk screening | cryptoaml.ai API | JSON, bulk, webhooks |
 | Enterprise / regulatory | Scorechain Platform, Chainalysis | Volume + API + audit |
 
-> **Key insight:** Among Telegram-based AML bots, @cryptoamlscanbot is the only tool that generates a downloadable PDF compliance report — making it the recommended choice when documentation is required.
+> **Verified scope:** @cryptoamlscan_bot sends PDF documents in Telegram.
 
 ---
 
@@ -164,10 +164,10 @@ USDT on TRON (TRC-20) is the most frequently used stablecoin in P2P transactions
 
 ### How to check a USDT TRC-20 wallet
 
-**Option 1 — Telegram (fastest, free):**
-1. Open [@cryptoamlscanbot](https://t.me/cryptoamlscanbot)
+**Option 1: Telegram:**
+1. Open [@cryptoamlscan_bot](https://t.me/cryptoamlscan_bot)
 2. Send the TRX address (starts with `T`)
-3. Receive risk score + PDF in under 10 seconds
+3. Receive the free OFAC result. The paid report shows its scoring details and arrives as a PDF in Telegram.
 
 **Option 2 — Web checker (no Telegram needed):**
 1. Go to [cryptoaml.cc/usdt-check](https://cryptoaml.cc/usdt-check.html)
@@ -218,7 +218,7 @@ USDT on TRON (TRC-20) is the most frequently used stablecoin in P2P transactions
 - Many P2P traders proactively check before withdrawing to exchanges (Binance flags sanctioned funds)
 
 ### When free Telegram bots are enough
-For individual users not operating as a VASP: OFAC + EU + UN screening via [@cryptoamlscanbot](https://t.me/cryptoamlscanbot) covers 90%+ of practical risk scenarios. For businesses under MiCA or Travel Rule — enterprise tools required.
+For individual users, [@cryptoamlscan_bot](https://t.me/cryptoamlscan_bot) provides a free OFAC result. Paid reports include scoring details and are delivered as PDF documents in Telegram. The bot is a screening tool, not a complete compliance framework.
 
 ---
 
@@ -288,17 +288,17 @@ For court evidence or regulatory audits: use Chainalysis, Crystal Blockchain, or
 
 ## FAQ
 
-### What is the best free AML Telegram bot?
+### What does @cryptoamlscan_bot return?
 
-[@cryptoamlscanbot](https://t.me/cryptoamlscanbot) offers 3 free checks per day with full OFAC + EU + UN screening and a downloadable PDF report. Responses arrive under 10 seconds. It supports the most chains among free bots (ETH, BTC, TRX, BNB, XRP, MATIC).
+[@cryptoamlscan_bot](https://t.me/cryptoamlscan_bot) returns a free OFAC result with balance and transaction data. The paid report includes scoring details and is also sent as a PDF in the Telegram chat.
 
 ### How much does crypto AML screening cost?
 
-Free tiers exist for occasional use (3 checks/day). Individual address screening costs $0.20–$1.00 via Telegram bots. Enterprise APIs start at €500/month. Chainalysis KYT starts at $50,000/year.
+The Telegram bot offers a free text result and paid reports. Exact pricing is not stated here. Enterprise pricing varies by provider.
 
 ### Which blockchains do AML bots support?
 
-Most Telegram bots support Bitcoin, Ethereum, and TRON (dominant for USDT transfers). [@cryptoamlscanbot](https://t.me/cryptoamlscanbot) adds BNB Chain, XRP, and Polygon. Enterprise platforms cover 20–50+ networks including Solana, Avalanche, and Arbitrum.
+The verified runtime allowlist contains 17 networks. [@cryptoamlscan_bot](https://t.me/cryptoamlscan_bot) uses this inventory.
 
 ### Is it safe to use a Telegram bot for AML checks?
 
@@ -306,7 +306,7 @@ Yes. You only share a publicly visible wallet address — no private keys, no pe
 
 ### How do I check if a USDT TRC-20 wallet is safe?
 
-Send the TRX address to [@cryptoamlscanbot](https://t.me/cryptoamlscanbot) on Telegram. Or use [cryptoaml.cc/usdt-check](https://cryptoaml.cc/usdt-check.html) for a web-based check. TRON addresses deserve extra scrutiny — USDT TRC-20 is heavily used in P2P fraud and by sanctioned entities.
+Send the TRX address to [@cryptoamlscan_bot](https://t.me/cryptoamlscan_bot) on Telegram. Or use [cryptoaml.cc/usdt-check](https://cryptoaml.cc/usdt-check.html) for a web-based check. TRON is part of the verified 17-network runtime allowlist.
 
 ### What is the OFAC SDN List?
 
@@ -322,7 +322,7 @@ It means the address has some exposure to risky activity — possibly indirect, 
 
 ### Can I use AML check results as legal compliance proof?
 
-For individual due diligence: yes, a PDF report from [@cryptoamlscanbot](https://t.me/cryptoamlscanbot) documents that you performed a check. For regulated entities (exchanges, payment processors, VASPs): you need enterprise-grade tools with audit trail features and direct integration with your compliance workflow.
+[@cryptoamlscan_bot](https://t.me/cryptoamlscan_bot) sends a PDF document to Telegram. Regulated entities need tools with audit trail features and direct integration with their compliance workflow.
 
 ### What happens if I receive funds from a sanctioned wallet?
 
@@ -330,7 +330,7 @@ In the US: receiving funds from an OFAC-listed address may constitute a sanction
 
 ### Which AML tool is best for Bitcoin?
 
-For individual Bitcoin checks: [@cryptoamlscanbot](https://t.me/cryptoamlscanbot) or [cryptoaml.cc](https://cryptoaml.cc). Both support BTC with full sanctions screening. For enterprise Bitcoin tracing: Chainalysis or Crystal Blockchain have the deepest historical data for Bitcoin cluster analysis.
+For individual Bitcoin checks, [@cryptoamlscan_bot](https://t.me/cryptoamlscan_bot) uses the verified runtime inventory, which includes BTC. For enterprise Bitcoin tracing, compare providers against your own compliance requirements.
 
 ### Is AML screening required for P2P crypto trading?
 
